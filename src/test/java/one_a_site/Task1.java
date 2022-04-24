@@ -1,6 +1,8 @@
+package one_a_site;
+
+import one_a_site.pages.HomePagePom;
 import org.junit.Test;
-import pages.BasePage;
-import pages.HomePagePom;
+import one_a_site.pages.BasePage;
 
 public class Task1 {
 

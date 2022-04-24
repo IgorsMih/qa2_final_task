@@ -1,4 +1,4 @@
-package pages;
+package one_a_site.pages;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -7,7 +7,7 @@ public class BasePage {
     public static ChromeDriver driver;
 
     public void openChromeByUrl(String url){
-        String driverPath = "C:\\Java\\QA2_Final_Work_1a_site\\src\\test\\resources\\";
+        String driverPath = "C:\\Java\\qa2_final_task\\src\\test\\resources\\";
         System.setProperty("webdriver.chrome.driver", driverPath + "chromedriver.exe");
         driver = new ChromeDriver();
         driver.get(url);

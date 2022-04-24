@@ -1,4 +1,4 @@
-package pages;
+package one_a_site.pages;
 
 import org.junit.Test;
 import org.openqa.selenium.By;
