@@ -1,6 +1,6 @@
 package one_a_site.pages;
 
-import one_a_site.model.UserStatic;
+import one_a_site.models.UserStatic;
 import org.openqa.selenium.By;
 
 import static org.assertj.core.api.Assertions.assertThat;

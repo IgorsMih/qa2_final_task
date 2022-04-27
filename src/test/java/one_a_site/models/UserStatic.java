@@ -1,4 +1,4 @@
-package one_a_site.model;
+package one_a_site.models;
 
 import lombok.Getter;
 
