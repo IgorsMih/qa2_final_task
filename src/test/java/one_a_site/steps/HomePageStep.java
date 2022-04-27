@@ -21,11 +21,6 @@ public class HomePageStep {
         homePagePom.openLoginPage();
     }
 
-//    @Given("Open Profile Page")
-//    public void openProfilePage() {
-//        forumHomePage.openProfilePage();
-//    }
-
     @And("Close All Pages")
     public void closeAllPages() {
         basePagePom.closeChrome();
