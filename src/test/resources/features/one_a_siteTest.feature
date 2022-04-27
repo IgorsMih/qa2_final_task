@@ -8,3 +8,7 @@ Feature: Test onea.lv login page and basket, filtering and validates it
     When Set Login Name to IMEmail
     And Set Password to IMPSW
     Then Press Submit Button
+
+  Scenario: Open profile page, change all parameters, validate and close all pages
+
+    And Close All Pages
