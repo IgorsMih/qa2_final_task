@@ -14,14 +14,13 @@ public class BasePagePom {
         driver.manage().window().maximize();
     }
 
-
     public void closeChrome() {
         try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        driver.quit();
+//        driver.quit();
     }
 
 }
