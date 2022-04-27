@@ -6,10 +6,8 @@ Feature: Test onea.lv login page and basket, filtering and validates it
     Given Open Home Page
     And Open Login Page
     And Validate that Login Page is open
-    When Set Login Name to IMEmail
-    And Set Password to IMPSW
-    Then Press Submit Button
+    When Set Login Name to IMEmail and Password to IMPSW and press Submit Button
 
-  Scenario: Open profile page, change all parameters, validate and close all pages
-
+  Scenario: Find product, ..., validate and close all pages
+    Given Set ProductName in Search Field to Lenovo and click Search Button
     And Close All Pages

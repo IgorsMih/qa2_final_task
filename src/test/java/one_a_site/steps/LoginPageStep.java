@@ -9,19 +9,9 @@ public class LoginPageStep {
 
     LoginPagePom loginPagePom = new LoginPagePom();
 
-    @When("^Set Login Name to (.*)$")
-    public void setLoginName(String loginName) {
-        loginPagePom.enterLoginName(loginName);
-    }
-
-    @And("^Set Password to (.*)$")
-    public void setPassword(String password) {
-        loginPagePom.enterPassword(password);
-    }
-
-    @Then("Press Submit Button")
-    public void pressSubmitButton() {
-        loginPagePom.loginSubmit();
+    @When("^Set Login Name to (.*) and Password to (.*) and press Submit Button$")
+    public void setLoginNameAndPasswordAndSubmit(String loginName, String password) {
+        loginPagePom.enterLoginNameAndPasswordAndSubmit(loginName, password);
     }
 
     @And("Validate that Login Page is open")

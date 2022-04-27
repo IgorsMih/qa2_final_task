@@ -18,21 +18,16 @@ public class LoginPagePom extends BasePagePom {
         assertThat(currentUrl).isEqualTo(baseUrl);
     }
 
-    public void enterLoginName(String name) {
+    public void enterLoginNameAndPasswordAndSubmit(String name, String password) {
         if ("IMEmail".equals(name)) {
             name = userStatic.getLoginName();
         } else name = "gmail@gmail.com";
         driver.findElement(loginName).sendKeys(name);
-    }
 
-    public void enterPassword(String password) {
         if ("IMPSW".equals(password)) {
             password = userStatic.getPassword();
         } else password = "None";
         driver.findElement(loginPassword).sendKeys(password);
-    }
-
-    public void loginSubmit() {
         driver.findElement(submitButton).click();
     }
 
