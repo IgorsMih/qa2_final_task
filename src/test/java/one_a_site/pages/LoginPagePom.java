@@ -11,7 +11,7 @@ public class LoginPagePom extends BasePagePom {
     private final By loginName = By.xpath("//input[@name='user[email]']");
     private final By loginPassword = By.xpath("//input[@name='user[password]']");
     private final By submitButton = By.xpath("//input[@class='users-session-form__submit']");
-    private final String baseUrl = "https://www.1a.lvusers/sign_in/";
+    private final String baseUrl = "https://www.1a.lv/users/sign_in";
 
     public void validateThatLoginPageIsOpen() {
         String currentUrl = driver.getCurrentUrl();

@@ -26,5 +26,6 @@ public class LoginPageStep {
 
     @And("Validate that Login Page is open")
     public void validateThatLoginPageIsOpen() {
+        loginPagePom.validateThatLoginPageIsOpen();
     }
 }
