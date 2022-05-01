@@ -23,7 +23,7 @@ public class ProductPagePom {
     public void findAsus() {
         Actions action = new Actions(driver);
 
-        sleepMode(6000);
+        sleepMode(7000);
         driver.findElement(acceptCookies).click();
         action.moveToElement(driver.findElement(selectMenu)).perform();
         action.moveToElement(driver.findElement(openDatortehnikaSubmenu)).click().perform();
