@@ -6,4 +6,5 @@ import lombok.Data;
 public class Product {
     String productName;
     String productPrice;
+    String productLink;
 }

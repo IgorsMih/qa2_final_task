@@ -14,8 +14,7 @@ public class LoginPagePom extends BasePagePom {
     private final String baseUrl = "https://www.1a.lv/users/sign_in";
 
     public void validateThatLoginPageIsOpen() {
-        String currentUrl = driver.getCurrentUrl();
-        assertThat(currentUrl).isEqualTo(baseUrl);
+        assertThat(driver.getCurrentUrl()).isEqualTo(baseUrl);
     }
 
     public void enterLoginNameAndPasswordAndSubmit(String name, String password) {
