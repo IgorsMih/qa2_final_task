@@ -3,10 +3,12 @@ package one_a_site.steps;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
+import one_a_site.models.Product;
 import one_a_site.pages.ProductPagePom;
 
 public class ProductPageStep {
 
+    Product product = new Product();
     ProductPagePom productPagePom = new ProductPagePom();
 
     @Given("Through Main Menu Find Asus X515")

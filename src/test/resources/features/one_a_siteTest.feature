@@ -12,6 +12,8 @@ Feature: Test onea.lv login page and basket, filtering and validates it
     Given Through Main Menu Find Asus X515
     When Get Name Price and Url
     And Add Product to Shopping Cart and Go To Shopping Cart
+    When Validate that Shopping Cart is Open
+    And Validate Name AsusX515 Price 558.10 and Sum 558,10 €
 
 
     And Close All Pages
