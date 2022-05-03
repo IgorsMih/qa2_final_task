@@ -15,9 +15,12 @@ public class ShoppingCartPagePom extends BasePagePom {
     private final By getProductPrice = By.xpath("//p[@class='detailed-cart-item__price']");
     private final By turpinat = By.xpath("//input[@class='main-button cart-main-button']");
     private final By pickUpPoint = By.xpath("//input[@value='3210']");
-//    private final By addressFirstName = By.xpath("//input[@name='address[first_name]']");
-//    private final By addressSecondName = By.xpath("//input[@name='address[last_name]']");
+
+/*  not for registered client only
+    private final By addressFirstName = By.xpath("//input[@name='address[first_name]']");
+    private final By addressSecondName = By.xpath("//input[@name='address[last_name]']");
     private final By phoneNumber = By.xpath("//input[@name='address[phone_number]']");
+*/
     private final By fullName = By.xpath("//div[@class='name']");
     private final By phoneNumberVal = By.xpath("//div[@class='address']");
     private final By getFinalPrice = By.xpath("//td[@class='checkout-order-summary-total-products__price']");
@@ -41,9 +44,12 @@ public class ShoppingCartPagePom extends BasePagePom {
 
     public void addressFieldsInCarts() {
         driver.findElement(pickUpPoint).click();
-//        driver.findElement(addressFirstName).sendKeys(userStatic.getFirstName());
-//        driver.findElement(addressSecondName).sendKeys(userStatic.getSecondName());
-//        driver.findElement(phoneNumber).sendKeys(userStatic.getMobile());
+
+/*      not for registered client only
+        driver.findElement(addressFirstName).sendKeys(userStatic.getFirstName());
+        driver.findElement(addressSecondName).sendKeys(userStatic.getSecondName());
+        driver.findElement(phoneNumber).sendKeys(userStatic.getMobile());
+*/
     }
 
     public void validateFieldsAndFinalPrice() {
