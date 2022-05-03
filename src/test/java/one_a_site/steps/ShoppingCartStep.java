@@ -36,4 +36,9 @@ public class ShoppingCartStep {
     public void validateFinalPrice() {
         shoppingCartPagePom.validateFinalPrice();
     }
+
+    @And("Clear Shopping Cart")
+    public void clearShoppingCart() {
+        shoppingCartPagePom.goToParskatit();
+    }
 }

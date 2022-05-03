@@ -2,6 +2,8 @@ package one_a_site.pages;
 
 import one_a_site.models.UserStatic;
 import org.openqa.selenium.By;
+import org.openqa.selenium.interactions.Actions;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class ShoppingCartPagePom extends BasePagePom {
@@ -17,6 +19,7 @@ public class ShoppingCartPagePom extends BasePagePom {
     private final By addressSecondName = By.xpath("//input[@name='address[last_name]']");
     private final By phoneNamber = By.xpath("//input[@name='address[phone_number]']");
     private final By getFinalPrice = By.xpath("//td[@class='checkout-order-summary-total-products__price']");
+    private final By clickOnDelete = By.xpath("//div[@class='detailed-cart-item__delete-wrap']");
 
     public void validateThatShoppingCartIsOpen() {
         assertThat(driver.getCurrentUrl()).isEqualTo(shoppingCartUrl);
@@ -51,6 +54,12 @@ public class ShoppingCartPagePom extends BasePagePom {
         String price = ProductPagePom.product.getProductPrice();
         String finalPrice = driver.findElement(getFinalPrice).getText() + " / gab.";
         assertThat(finalPrice).isEqualTo(price);
+    }
+
+    public void goToParskatit() {
+        driver.navigate().back();
+        driver.findElement(clickOnDelete).click();
+
     }
 
 }

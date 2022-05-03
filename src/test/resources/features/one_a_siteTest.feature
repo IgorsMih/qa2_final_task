@@ -17,4 +17,5 @@ Feature: Test onea.lv login page and basket, filtering and validates it
     And Turpinat
     Then Fill All Fields in Final Page and Validate Final Price 558,10 €
     And Validate Final Price
+    And Clear Shopping Cart
     And Close All Pages
