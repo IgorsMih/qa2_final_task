@@ -9,13 +9,13 @@ Feature: Test onea.lv login page and basket, filtering and validates it
     When Set Login Name to IMEmail and Password to IMPSW and press Submit Button
 
   Scenario: Find needed Product, add it to Shopping Cart and validate all needed information
-    Given Through Main Menu Find Asus X515
+    Given Through Main Menu Find Business Notebook
     When Get Name Price and Url
     And Add Product to Shopping Cart and Go To Shopping Cart
     When Validate that Shopping Cart is Open
-    And Validate Name AsusX515 and Price 558.10
-    And Turpinat
-    Then Fill All Fields in Final Page and Validate Final Price 558,10 €
+    And Validate Name and Price
+    And Click on Turpinat
+    Then Fill All Fields in Final Page
     And Validate Final Price
     And Clear Shopping Cart
     And Close All Pages

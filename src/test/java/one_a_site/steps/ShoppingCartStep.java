@@ -3,12 +3,10 @@ package one_a_site.steps;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import one_a_site.pages.ProductPagePom;
 import one_a_site.pages.ShoppingCartPagePom;
 
 public class ShoppingCartStep {
 
-    ProductPagePom productPagePom = new ProductPagePom();
     ShoppingCartPagePom shoppingCartPagePom = new ShoppingCartPagePom();
 
     @When("Validate that Shopping Cart is Open")
@@ -16,19 +14,18 @@ public class ShoppingCartStep {
         shoppingCartPagePom.validateThatShoppingCartIsOpen();
     }
 
-    @And("^Validate Name (.*) and Price (.*)$")
-    public void getNameOfTheProduct(String productName, String productPrice) {
-        shoppingCartPagePom.validateNamePriceAndSum(productName, productPrice);
-
+    @And("Validate Name and Price")
+    public void getNameOfTheProduct() {
+        shoppingCartPagePom.validateNameAndPrice();
     }
 
-    @And("Turpinat")
+    @And("Click on Turpinat")
     public void turpinat() {
         shoppingCartPagePom.turpinatShopping();
     }
 
-    @Then("^Fill All Fields in Final Page and Validate Final Price (.*)$")
-    public void fillAllFieldsInFinalPageAndValidateFinalPrice(String finalPrice) {
+    @Then("Fill All Fields in Final Page")
+    public void fillAllFieldsInFinalPageAndValidateFinalPrice() {
         shoppingCartPagePom.addressFieldsInCarts();
     }
 
@@ -39,6 +36,6 @@ public class ShoppingCartStep {
 
     @And("Clear Shopping Cart")
     public void clearShoppingCart() {
-        shoppingCartPagePom.goToParskatit();
+        shoppingCartPagePom.clearShoppingCart();
     }
 }

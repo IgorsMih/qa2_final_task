@@ -11,7 +11,7 @@ public class ProductPageStep {
     Product product = new Product();
     ProductPagePom productPagePom = new ProductPagePom();
 
-    @Given("Through Main Menu Find Asus X515")
+    @Given("Through Main Menu Find Business Notebook")
     public void findAsusX515() {
         productPagePom.findAsus();
     }

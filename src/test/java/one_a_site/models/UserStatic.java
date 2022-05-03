@@ -9,8 +9,4 @@ public class UserStatic {
     String firstName = "Igors";
     String secondName = "Mihejevs";
     String mobile = "29111111";
-    String city = "Riga";
-    String address = "Brivibas str.100-1";
-    String postIndex = "LV-1111";
-    String additionalInformation = "Door code - 1234";
 }
