@@ -13,7 +13,7 @@ public class ProductPagePom extends BasePagePom{
     private final By openDatortehnikaSubmenu = By.xpath("//a[@class='submenu-lvl1__link']");
     private final By openPortativieDatori = By.xpath("//img[@src='https://sb.ksd-images.lt/onea_lv/images/rich_texts/Articles/limonade5/2/3_PORTATIVIE_DATORI_2.jpg']");
     private final By openPortativieDatoriBiznesam = By.xpath("//div[@class='catalog-taxons-visual-filter-glide-slider__slide glide__slide']");
-    private final By openAsusX515 = By.xpath("//div[@class='catalog-taxons-product catalog-taxons-product--grid-view'][3]");
+    private final By openAsusX515 = By.xpath("//div[@class='catalog-taxons-product catalog-taxons-product--grid-view'][1]");
     private final By getNameAsusX515 = By.xpath("//div[@class='product-righter google-rich-snippet']/h1");
     private final By getPriceAsusX515 = By.xpath("//span[@class='price'][1]");
     private final By addProductToShoppingCart = By.id("add_to_cart_btn");
