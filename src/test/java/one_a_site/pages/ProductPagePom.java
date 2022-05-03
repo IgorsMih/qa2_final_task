@@ -1,12 +1,16 @@
 package one_a_site.pages;
 
 import one_a_site.models.Product;
+import one_a_site.modules.CreateFile;
+import one_a_site.modules.WriteToFile;
 import org.openqa.selenium.By;
 import org.openqa.selenium.interactions.Actions;
 
 public class ProductPagePom extends BasePagePom{
 
     public static Product product = new Product();
+    CreateFile createFile = new CreateFile();
+    WriteToFile writeToFile = new WriteToFile();
 
     private final By acceptCookies = By.id("CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll");
     private final By selectMenu = By.xpath("//span[@class='main-menu__handle-text']");
@@ -37,6 +41,8 @@ public class ProductPagePom extends BasePagePom{
         product.setProductPrice(driver.findElement(getProductPrice).getText());
         product.setProductLink(driver.getCurrentUrl());
         System.out.println("Name  = " + product.getProductName() + "\nPrice = " + product.getProductPrice() + "\nLink  = " + product.getProductLink());
+//        createFile.create();
+//        writeToFile.write(product.getProductName(), product.getProductPrice(), product.getProductLink());
     }
 
     public void addToCart() {

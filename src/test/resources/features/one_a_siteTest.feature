@@ -10,7 +10,7 @@ Feature: Test onea.lv login page and basket, filtering and validates it
 
   Scenario: Find needed Product, add it to Shopping Cart and validate all needed information, then Logoff
     Given Through Main Menu Find Business Notebook
-    When Get Name Price and Url
+    When Get Name Price Url, Create File and Add Them to File
     And Add Product to Shopping Cart and Go To Shopping Cart
     When Validate that Shopping Cart is Open
     And Validate Name and Price
@@ -20,4 +20,3 @@ Feature: Test onea.lv login page and basket, filtering and validates it
     And Clear Shopping Cart
     And Logoff from Site
     And Close All Pages
-    Then Create File for Product and Add Information toFile

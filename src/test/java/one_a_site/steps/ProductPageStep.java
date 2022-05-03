@@ -14,8 +14,8 @@ public class ProductPageStep {
         productPagePom.findAsus();
     }
 
-    @When("Get Name Price and Url")
-    public void getNameAndPrice() {
+    @When("Get Name Price Url, Create File and Add Them to File")
+    public void getNamePriceAndUrlCreateFileAndAddThemToFile() {
         productPagePom.getNamePriceAndLink();
     }
 

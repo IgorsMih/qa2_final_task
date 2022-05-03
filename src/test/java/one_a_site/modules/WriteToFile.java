@@ -1,20 +1,16 @@
 package one_a_site.modules;
 
-import one_a_site.models.Product;
-
 import java.io.FileWriter;
 import java.io.IOException;
 
 public class WriteToFile {
 
-    public static Product product = new Product();
-
-    public void write() {
+    public void write(String name, String price, String url) {
         try {
             FileWriter myWriter = new FileWriter("C:\\Java\\CreatedFiles\\one_a_lv_product.txt");
-            myWriter.write(product.getProductName());
-            myWriter.write(product.getProductPrice());
-            myWriter.write(product.getProductLink());
+            myWriter.write(name);
+            myWriter.write(price);
+            myWriter.write(url);
             myWriter.close();
             System.out.println("Successfully wrote to the file.");
         } catch (IOException e) {
