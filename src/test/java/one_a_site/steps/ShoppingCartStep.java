@@ -38,4 +38,9 @@ public class ShoppingCartStep {
     public void clearShoppingCart() {
         shoppingCartPagePom.clearShoppingCart();
     }
+
+    @And("Logoff from Site")
+    public void logoffFromSite() {
+        shoppingCartPagePom.logOff();
+    }
 }
