@@ -13,7 +13,7 @@ Feature: Test onea.lv login page and basket, filtering and validates it
     When Get Name Price and Url
     And Add Product to Shopping Cart and Go To Shopping Cart
     When Validate that Shopping Cart is Open
-    And Validate Name AsusX515 Price 558.10 and Sum 558,10 €
+    And Validate Name AsusX515 and Price 558.10
     And Turpinat
     Then Fill All Fields in Final Page and Validate Final Price 558,10 €
     And Validate Final Price

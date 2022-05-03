@@ -16,9 +16,9 @@ public class ShoppingCartStep {
         shoppingCartPagePom.validateThatShoppingCartIsOpen();
     }
 
-    @And("^Validate Name (.*) Price (.*) and Sum (.*)$")
-    public void getNameOfTheProduct(String productName, String productPrice, String productSum) {
-        shoppingCartPagePom.validateNamePriceAndSum(productName, productPrice, productSum);
+    @And("^Validate Name (.*) and Price (.*)$")
+    public void getNameOfTheProduct(String productName, String productPrice) {
+        shoppingCartPagePom.validateNamePriceAndSum(productName, productPrice);
 
     }
 

@@ -11,7 +11,6 @@ public class ShoppingCartPagePom extends BasePagePom {
     private final String shoppingCartUrl = "https://www.1a.lv/cart";
     private final By getNameAsusX515 = By.xpath("//a[@class='detailed-cart-item__name-link']");
     private final By getPriceAsusX515 = By.xpath("//p[@class='detailed-cart-item__price']");
-    private final By getSumOfShoppingCart = By.xpath("//p[@class='detailed-cart-item__total']");
     private final By turpinat = By.xpath("//input[@class='main-button cart-main-button']");
     private final By pickUpPoint = By.xpath("//input[@value='3210']");
     private final By addressFirstName = By.xpath("//input[@name='address[first_name]']");
@@ -23,7 +22,7 @@ public class ShoppingCartPagePom extends BasePagePom {
         assertThat(driver.getCurrentUrl()).isEqualTo(shoppingCartUrl);
     }
 
-    public void validateNamePriceAndSum(String name, String price, String sum) {
+    public void validateNamePriceAndSum(String name, String price) {
         if ("AsusX515".equals(name)) {
             name = ProductPagePom.product.getProductName();
         } else name = "None";
@@ -35,8 +34,6 @@ public class ShoppingCartPagePom extends BasePagePom {
         String price1 = driver.findElement(getPriceAsusX515).getText();
         String price2 = price1 + " / gab.";
         assertThat(price2).isEqualTo(price);
-
-        assertThat(driver.findElement(getSumOfShoppingCart).getText()).isEqualTo(sum);
     }
 
     public void turpinatShopping() {
