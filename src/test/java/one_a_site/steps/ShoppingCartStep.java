@@ -29,9 +29,9 @@ public class ShoppingCartStep {
         shoppingCartPagePom.addressFieldsInCarts();
     }
 
-    @And("Validate Final Price")
-    public void validateFinalPrice() {
-        shoppingCartPagePom.validateFinalPrice();
+    @And("Validate Filled Fields and Final Price")
+    public void validateFilledFieldsAndFinalPrice() {
+        shoppingCartPagePom.validateFieldsAndFinalPrice();
     }
 
     @And("Clear Shopping Cart")
@@ -43,4 +43,5 @@ public class ShoppingCartStep {
     public void logoffFromSite() {
         shoppingCartPagePom.logOff();
     }
+
 }
