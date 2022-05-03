@@ -12,11 +12,11 @@ Feature: Test onea.lv login page and basket, filtering and validates it
     Given Through Main Menu Find Business Notebook
     When Get Name Price Url, Create File and Add Them to File
     And Add Product to Shopping Cart and Go To Shopping Cart
-    When Validate that Shopping Cart is Open
+    And Validate that Shopping Cart is Open
     And Validate Name and Price
     And Click on Turpinat
     Then Fill All Fields in Final Page
     And Validate Filled Fields and Final Price
-    Then Clear Shopping Cart
+    And Clear Shopping Cart
     And Logoff from Site
     And Close All Pages
