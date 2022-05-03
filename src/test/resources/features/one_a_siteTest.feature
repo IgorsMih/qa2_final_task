@@ -17,6 +17,6 @@ Feature: Test onea.lv login page and basket, filtering and validates it
     And Click on Turpinat
     Then Fill All Fields in Final Page
     And Validate Filled Fields and Final Price
-    And Clear Shopping Cart
+    Then Clear Shopping Cart
     And Logoff from Site
     And Close All Pages
