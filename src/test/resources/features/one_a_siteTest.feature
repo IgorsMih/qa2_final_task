@@ -20,3 +20,4 @@ Feature: Test onea.lv login page and basket, filtering and validates it
     And Clear Shopping Cart
     And Logoff from Site
     And Close All Pages
+    Then Create File for Product and Add Information toFile

@@ -5,7 +5,7 @@ import java.io.IOException;
 
 public class CreateFile {
 
-    public static void main(String[] args) {
+    public void create() {
         try {
             File myObj = new File("C:\\Java\\CreatedFiles\\one_a_lv_product.txt");
             if (myObj.createNewFile()) {

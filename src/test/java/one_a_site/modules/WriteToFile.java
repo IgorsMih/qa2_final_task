@@ -9,7 +9,7 @@ public class WriteToFile {
 
     public static Product product = new Product();
 
-    public static void main(String[] args) {
+    public void write() {
         try {
             FileWriter myWriter = new FileWriter("C:\\Java\\CreatedFiles\\one_a_lv_product.txt");
             myWriter.write(product.getProductName());
