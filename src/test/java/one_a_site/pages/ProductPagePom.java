@@ -41,7 +41,7 @@ public class ProductPagePom extends BasePagePom{
         product.setProductPrice(driver.findElement(getProductPrice).getText());
         product.setProductLink(driver.getCurrentUrl());
         System.out.println("Name  = " + product.getProductName() + "\nPrice = " + product.getProductPrice() + "\nLink  = " + product.getProductLink());
-//      Creating file and Writing information to it
+//      Creating file and writing information to it
 //        createFile.create();
 //        writeToFile.write(product.getProductName(), product.getProductPrice(), product.getProductLink());
     }
