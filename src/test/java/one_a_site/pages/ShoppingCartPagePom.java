@@ -16,7 +16,7 @@ public class ShoppingCartPagePom extends BasePagePom {
     private final By turpinat = By.xpath("//input[@class='main-button cart-main-button']");
     private final By pickUpPoint = By.xpath("//input[@value='3210']");
 
-/*  not for registered client only
+/*  not for registered clients only
     private final By addressFirstName = By.xpath("//input[@name='address[first_name]']");
     private final By addressSecondName = By.xpath("//input[@name='address[last_name]']");
     private final By phoneNumber = By.xpath("//input[@name='address[phone_number]']");
