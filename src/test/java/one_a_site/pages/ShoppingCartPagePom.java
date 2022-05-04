@@ -45,7 +45,7 @@ public class ShoppingCartPagePom extends BasePagePom {
     public void addressFieldsInCarts() {
         driver.findElement(pickUpPoint).click();
 
-/*      not for registered client only
+/*      not for registered clients only
         driver.findElement(addressFirstName).sendKeys(userStatic.getFirstName());
         driver.findElement(addressSecondName).sendKeys(userStatic.getSecondName());
         driver.findElement(phoneNumber).sendKeys(userStatic.getMobile());
