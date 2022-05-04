@@ -6,7 +6,7 @@ Feature: Test onea.lv login page and basket, filtering and validates it
     Given Open Home Page
     And Open Login Page
     And Validate that Login Page is open
-    When Set Login Name to IMEmail and Password to IMPSW and press Submit Button
+    And Set Login Name to IMEmail and Password to IMPSW and press Submit Button
 
   Scenario: Find Product, add information to file, add it to Shopping Cart and validate all needed information, then Logoff
     Given Through Main Menu Find Business Notebook
